@@ -1,0 +1,133 @@
+body {
+    font-family: "Tahoma";
+    background-color: coral
+}
+.intro {
+    font-family: "Impact";
+    font-size: 100px;
+}
+
+h1 {
+    margin: 50px 50px;
+    font-size: 100px;
+    text-decoration: underline dotted;
+    text-decoration-thickness: 10px;
+    color: #eff176;
+    animation: fadeInDown 2s;
+    
+}
+
+h1 {
+    font-family: "Impact";
+}
+
+.underline {
+    text-decoration: underline;
+    font-family: "Times New Roman";
+}
+h2 {margin: 50px 50px;
+    color: aqua;
+    font-size: 50px;
+    font-family: 'Courier New';
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: gold;
+    text-decoration-thickness: 2px;
+animation: fadeInDown 4s step-end;}
+
+p {margin: 50px 50px;
+    color: aqua;
+    font-size: 30px;
+    font-family: 'Courier New';
+    animation: fadeInDown 6s step-end;
+
+}
+.chatButton {display: flex; width: fit-content; 
+    padding: 25px;
+    border-radius: 10px;
+margin:50px 20px;
+background-color: #eff176;
+transition: height 4s, width 2s;
+    color: black;
+    animation: bounce 2s both infinite linear,
+    simple-animation;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-duration: 5s;
+    transition-timing-function: ease-in-out;}
+
+.chatButton:hover { 
+    background-color: aqua);
+    width: 150px;
+    height: 20px;
+    color: coral;
+    display: flex;
+    justify-content: center;}
+
+        @keyframes simple-animation {
+            0% {
+                background-color: orchid;
+                left: 0;
+                top: 0;
+                /* top left */
+            }
+    
+            25% {
+                background-color: aqua;
+                left: 200px;
+                top: 0;
+                /* top right */
+            }
+    
+            50% {
+                background-color: chartreuse;
+                left: 200px;
+                top: 200px;
+                /* bottom right */
+            }
+    
+            75% {
+                background-color: hotpink;
+                left: 0px;
+                top: 200px;
+                /* bottom left */
+            }
+    
+            100% {
+                background-color: yellow;
+                left: 0px;
+                top: 0px;
+                /* top left */
+            }
+        }
+                @keyframes bounce {
+        
+                    0%,
+                    20%,
+                    50%,
+                    80%,
+                    100% {
+                        transform: translateY(0);
+                    }
+        
+                    40% {
+                        transform: translateY(-30px);
+                    }
+        
+                    60% {
+                        transform: translateY(-15px);
+                    }
+                } 
+                                @keyframes fadeInDown {
+                                    0% {
+                                        opacity: 0;
+                                        -webkit-transform: translateY(-40px);
+                                    }
+                
+                                    100% {
+                                        opacity: 1;
+                                        -webkit-transform: translateY(0);
+                                    }
+                                }
