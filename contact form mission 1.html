@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="contact form mission 1.css">
+<header>
+    <div><a target="_blank" href="http://127.0.0.1:3000/mission 1/mission 1.html"> <i class="chatButton">Home</i></a>
+    </div>
+</header>
+<br>
+<br>
+<br>
+
+<head>
+    <title>CSS selector logic</title>
+</head>
+
+<body>
+    <form action="mailto:kerrynb@missionreadyhq.com" method="POST">
+        <!-- for & id associates a label with a form field -->
+        <label for="myName"> What is your name </label>
+        <input type="text" name="myName" id="myName" placeholder="Your name" required>
+        <br>
+        <label for="email"> Your email </label>
+        <input type="text" name="email" id="email" placeholder="name@domain.com" required>
+        <br>
+        <!-- Radio buttons - choose one of a predefined set of options -->
+        <h4>Subject</h4>
+        <input type="radio" id="sales" name="subject" required>
+        <label for="sales">Sales</label>
+        <br>
+        <input type="radio" id="support" name="subject" required>
+        <label for="support">Support</label>
+        <br>
+        <input type="radio" id="others" name="subject" required>
+        <label for="others">Other reason</label>
+        <hr>
+        <br>
+        <label for="message">Enter your message: </label>
+        <br>
+        <textarea name="message" id="message" cols="50" rows="10"></textarea>
+        <br>
+        <hr>
+        <div>
+            <form action="mailto:kerrynb@missionreadyhq.com" method="POST"></form>
+            <input id="submit" type="submit">
+        </div>
+    </form>
+    <br>
+    <br>
+</body>
+
+</html>

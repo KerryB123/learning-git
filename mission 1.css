@@ -1,0 +1,121 @@
+body {
+    font-family: "Tahoma";
+    background-color: coral
+}
+
+
+header {
+    margin: 0px 0px;
+}
+
+h1 {font-size: 50px;
+display: center;
+font-family: Impact;
+margin: auto;
+}
+
+
+
+a { transition: height 5s, width 2s;
+   color: black;
+    animation-duration: 4s;
+    transition-timing-function: ease-in-out;
+    text-decoration: none;
+    margin: 10px;
+    padding: 15px;
+    width: 250px;
+
+   
+}
+/* a:hover {background-color:rgb(68, 0, 255);
+    width: 450px;
+    height: 400px;
+   
+} */
+
+
+/* .chatButton {transition: height 4s, width 2s;
+    color: black;
+    animation-duration: 4s;
+    background-color: #eff176;
+    margin: 0px 0px;
+    padding: 15px 25px;
+    width: 150px;
+    font-family: Tahoma;
+    display: flex; justify-items: center;
+    justify-content: center;
+}*/
+
+.chatButton {
+background-color: black;
+color: coral;
+padding: 15px 25px;
+font-size: larger;
+font-family: Tahoma;
+border-bottom: 10px solid #eff176;
+animation: wiggle 2s linear infinite;
+display: flex;
+    justify-items: center;
+    justify-content: center;
+    width: 150px;
+    border-radius: 10%;
+
+    /* animation shorthand prop 
+    animation-name: wiggle;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  */
+}
+@keyframes wiggle {
+
+    0%,
+    7% {
+        transform: rotateZ(0);
+    }
+
+    15% {
+        transform: rotateZ(-15deg);
+    }
+
+    20% {
+        transform: rotateZ(10deg);
+    }
+
+    25% {
+        transform: rotateZ(-10deg);
+    }
+
+    30% {
+        transform: rotateZ(6deg);
+    }
+
+    35% {
+        transform: rotateZ(-4deg);
+    }
+
+    40%,
+    100% {
+        transform: rotateZ(0);
+    }
+}
+
+.chatButton:hover {
+    background-color:black;
+    width: 250px; 
+    height: 30px;
+    color: coral;
+    display:flex; justify-content:  center;
+
+}
+
+#profile {
+    display: flex; inline-size: auto;
+}
+
+#pic {
+    width: auto;
+    height: 200px ;
+    margin:auto; margin-top: 100px;
+display: flex;;justify-content: center;
+border-radius: 50%}
