@@ -1,0 +1,81 @@
+body {
+    background-color: coral
+}
+
+input[type='text'],
+input[type='email'] {
+    border: none;
+    border-bottom: 2px solid #eff176;
+    padding: 5px 5px;
+    margin: 8px 0;
+}
+
+input[type="radio"] {
+    width: 20px;
+}
+
+input[type="submit"] {
+    background-color: rgb(68, 0, 255);
+    width: 100px;
+    height: 20px;
+    color: coral;
+    display: flex;
+}
+
+textarea {
+    border: 2px solid #eff176;
+
+}
+
+input[type="submit"] {
+    background-color: #eff176;
+    color: black;
+    transition: width 2s,
+        height 2s;
+    transition:
+        background-color 4s;
+    display: flex;
+    border-radius: 10%;
+    padding: 20px 15px;
+    font-size: medium;
+    width: fit-content;
+    height: fit-content;
+
+}
+
+input:hover[type="submit"] {
+    background-color: rgb(68, 0, 255);
+    color: coral;
+    display: flex;
+    center;
+    font-size: medium;
+    width: fit-content;
+    height: fit-content;
+}
+
+/* adjacent sibling selectot (+) - selects an element directly
+after another specific elemt */
+input[type='radio']+label {
+    color: black;
+}
+
+.chatButton {
+    padding: 15px;
+    background-color: #eff176;
+    transition: width 2s, height 2s;
+    transition: background-color 4s;
+    color: black;
+    border-radius: 10%;
+    width: fit-content;
+    height: fit-content;
+
+}
+
+.chatButton:hover {
+    background-color: rgb(68, 0, 255);
+    width: 150px;
+    height: 20px;
+    color: coral;
+    display: flex;
+    justify-content: center;
+}
