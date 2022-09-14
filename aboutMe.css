@@ -7,30 +7,30 @@ body {
     font-size: 100px;
 }
 
-h1 {
+h2 {
     margin: 50px 50px;
     font-size: 100px;
-    text-decoration: underline dotted;
+   /* text-decoration: underline dotted;*/
     text-decoration-thickness: 10px;
     color: #eff176;
     animation: fadeInDown 2s;
     
 }
 
-h1 {
+h2 {
     font-family: "Impact";
 }
 
 .underline {
-    text-decoration: underline;
+    /*text-decoration: underline;*/
     font-family: "Times New Roman";
 }
-h2 {margin: 50px 50px;
+h3 {margin: 50px 50px;
     color: aqua;
     font-size: 50px;
     font-family: 'Courier New';
-    text-decoration-line: underline;
-    text-decoration-style: wavy;
+    /*text-decoration-line: underline;
+    text-decoration-style: wavy;*/
     text-decoration-color: gold;
     text-decoration-thickness: 2px;
 animation: fadeInDown 4s step-end;}
@@ -42,7 +42,9 @@ p {margin: 50px 50px;
     animation: fadeInDown 6s step-end;
 
 }
-.chatButton {display: flex; width: fit-content; 
+.chatButton 
+
+{display: flex; width: fit-content; 
     padding: 25px;
     border-radius: 10px;
 margin:50px 20px;
@@ -131,3 +133,92 @@ transition: height 4s, width 2s;
                                         -webkit-transform: translateY(0);
                                     }
                                 }
+                        
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:300,600);
+
+body {
+    font-size: 20px;
+    font-family: 'Work Sans', sans-serif;
+    color: black;
+    font-weight: 300;
+    text-align: center;
+    background-color: coral;
+}
+
+h1 {font-weight: 300;
+    margin: 150px;
+    padding: 10px;
+    font-size: 40px;
+    background-color:chartreuse ;
+    color: #fff;
+    
+}
+
+.question {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.answers {
+    margin-bottom: 20px;
+    text-align: left;
+    display: inline-block;
+}
+
+.answers label {
+    display: block;
+    margin-bottom: 10px;
+   
+   
+}
+
+button {
+font-size: 20px;
+        display: flex;
+        width: fit-content;
+        padding: 25px;
+        border-radius: 10px;
+        margin: 50px 20px;
+        background-color: #eff176;
+        transition: height 4s, width 2s;
+        color: #fff;
+        animation: bounce 2s both infinite linear,
+            simple-animation;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+        animation-duration: 5s;
+        transition-timing-function: ease-in-out;
+
+}
+
+button:hover {
+  
+    background-color: #38a;
+}
+
+
+
+/*z-indexes and opacity transitions allow slides to fade in and out*/
+
+.slide {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.active-slide {
+    opacity: 1;
+    z-index: 2;
+}
+
+.quiz-container {
+    position: relative;
+    height: 200px;
+    margin-top: 40px;
+}

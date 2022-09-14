@@ -27,6 +27,8 @@ a { transition: height 5s, width 2s;
 
    
 }
+
+
 /* a:hover {background-color:rgb(68, 0, 255);
     width: 450px;
     height: 400px;
@@ -119,3 +121,4 @@ display: flex;
     margin:auto; margin-top: 100px;
 display: flex;;justify-content: center;
 border-radius: 50%}
+

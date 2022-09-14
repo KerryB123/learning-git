@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name Count</title>
+    <link rel="stylesheet" type="text/css" href="contactFormMission1.css" />
+    <script src="contactFormMission2.js" defer></script>
+
+    <header>
+        <div><a target="_blank" href="http://127.0.0.1:3000/mission 1/mission1.html"> <i
+                    class="chatButton">Home</i></a> </div>
+    </header>
+</head>
+
+<body>
+    <form action="mailto:kerrynb@missionreadyhq.com" method="POST">
+        <div class='name-box'>
+            <h2>
+                <!--Incorrect names:-->
+            </h2>
+            <p id="incorrect-names"></p>
+        </div>
+        <h3 class="input-title">Your Name:</h3>
+
+        </div>
+        <div class="input-container">
+            <input type="text" id="user-input" />
+            <button type="button" onclick="checkNames()">Submit</button>
+
+        </div>
+        </div>
+        <!-- for & id associates a label with a form field -->
+        <!--  <label for="myName"> What is your name </label>-->
+        <!-- <input type="text" name="myName" id="myName" placeholder="Your name" required> -->
+        <br>
+        <br>
+        <br>
+        <h3>Your email</h3>
+        <label for="email"> </label>
+        <input type="text" name="email" id="email" placeholder="name@domain.com" required>
+        <br>
+        <!-- Radio buttons - choose one of a predefined set of options -->
+        <h3>Subject</h3>
+        <input type="radio" id="sales" name="subject" required>
+        <label for="sales">Sales</label>
+        <br>
+        <input type="radio" id="support" name="subject" required>
+        <label for="support">Support</label>
+        <br>
+        <input type="radio" id="others" name="subject" required>
+        <label for="others">Other reason</label>
+        <hr>
+        <br>
+        <h3>Enter your message:</h3>
+        <label for="message"></label>
+        <br>
+        <textarea name="message" id="message" cols="50" rows="10"></textarea>
+        <br>
+        <hr>
+        <div>
+            <form action="mailto:kerrynb@missionreadyhq.com" method="POST"></form>
+            <input id="emailsubmit" type="submit">
+        </div>
+    </form>
+<br>
+<br>
+</div>
+
+<div>
+    <h3 id="count-result"></h3>
+    <div class="name-box">
+        <h3> 🌻 Have a great day 🌻 </h3>
+        <h3 id="correct-names"></h3>
+
+<!--OLD CODE/PRAC CODE-->
+
+    <!-- <div class="names-container">
+                <div class="name-box">
+                    <h2>Correct names:</h2>
+                    <p id="correct-names"></p>
+                </div>
+                <div class='name-box'>
+                    <h2>Incorrect names:</h2>
+                    <p id="incorrect-names"></p>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="input-title">Input names below:</h2>
+        <div class="input-container">
+            <input type="text" id="user-input" />
+            <button type="button" onclick="checkNames()">Count</button>
+        </div> -->
+    
+            <!--<div class="names-container">
+                        <div class="app-container">
+                            <div class="result-wrapper">-->
+
+        </div>
+
+
+</body>
+
+</html>
